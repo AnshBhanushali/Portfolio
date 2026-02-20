@@ -124,6 +124,7 @@ function ContactCard({
 export default function SectionSix() {
   const [copied, setCopied] = useState(false);
 
+<<<<<<< HEAD
   const EMAIL = "bhanusad@mail.uc.edu";
 
   const copyEmail = async () => {
@@ -135,6 +136,12 @@ export default function SectionSix() {
       // fallback: open mail client if clipboard blocked
       window.location.href = `mailto:${EMAIL}`;
     }
+=======
+  const copyEmail = () => {
+    navigator.clipboard.writeText("bhanusad@mail.uc.edu");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1800);
+>>>>>>> 205598d44a3df67bf29ad18dad53ffedc93d5522
   };
 
   return (
