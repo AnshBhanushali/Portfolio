@@ -103,7 +103,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="hero" className="relative min-h-screen ...">
+    <section id="hero" className="relative min-h-screen bg-black text-white overflow-hidden">
       {/* Background */}
       <div className="pointer-events-none absolute inset-0">
         {/* mesh blobs */}
@@ -123,7 +123,7 @@ export default function Hero() {
 
         {/* grain + vignette */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.08),transparent_55%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(0,0,0,0.78))]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.0),rgba(0,0,0,1))]" />
       </div>
 
       <div className="relative mx-auto flex min-h-screen max-w-6xl items-center px-6">
